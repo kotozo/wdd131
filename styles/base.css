@@ -47,7 +47,9 @@ nav {
 	max-width: 800px;
 }
 nav ul {
-	list-style-type: none;
+	list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 nav a {
 	display: block;

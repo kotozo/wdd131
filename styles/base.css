@@ -1,17 +1,18 @@
-/* --------------------
+
+/* ==========================
    RESET
--------------------- */
+========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --------------------
-   GENERAL
--------------------- */
+/* ==========================
+   BODY
+========================== */
 body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     max-width: 1200px;
@@ -19,33 +20,34 @@ body {
     line-height: 1.6;
 }
 
-/* --------------------
+/* ==========================
    HEADER
--------------------- */
+========================== */
 header {
-    background-color: #153e5c;
+    background-color: #123b5d;
     color: white;
 }
 
+/* Required in assignment */
 #course-title {
     display: block;
     text-align: center;
-    padding: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
+    padding: 1.5rem;
 }
 
-/* --------------------
+/* ==========================
    NAVIGATION
--------------------- */
+========================== */
 nav {
     background-color: #222;
 }
 
 nav ul {
+    list-style: none;
     display: flex;
     justify-content: space-around;
-    list-style: none;
 }
 
 nav a {
@@ -53,109 +55,98 @@ nav a {
     padding: 1rem;
     color: white;
     text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #444;
 }
 
-/* --------------------
-   MAIN
--------------------- */
+/* ==========================
+   MAIN LAYOUT
+========================== */
 main {
-    padding: 2rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+    padding: 2rem;
 }
 
 main h1 {
     grid-column: 1 / 3;
     text-align: center;
-    font-size: 2rem;
     margin-bottom: 1rem;
+    color: #123b5d;
 }
 
-/* --------------------
-   CARD
--------------------- */
+/* ==========================
+   CARDS
+========================== */
 .card {
     background-color: white;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
-    background-color: #153e5c;
+    background-color: #123b5d;
     color: white;
     text-align: center;
     padding: 0.8rem;
 }
 
-/* --------------------
+/* ==========================
    ABOUT ME CARD
--------------------- */
-.card:first-of-type {
-    padding-bottom: 1rem;
-}
-
-.card:first-of-type img {
+========================== */
+.about-me img {
     float: right;
     margin: 1rem;
-    border-radius: 8px;
-    max-width: 200px;
-    height: auto;
+    border-radius: 5px;
 }
 
-.card:first-of-type p {
+.about-me p {
     padding: 1rem;
     text-align: justify;
 }
 
-/* --------------------
+/* ==========================
    RESOURCE CARD
--------------------- */
-.card:last-of-type ul {
+========================== */
+.resources ul {
     padding: 2rem;
 }
 
-.card:last-of-type li {
+.resources li {
     margin-bottom: 1rem;
 }
 
-.card:last-of-type a {
-    color: #0d47a1;
+.resources a {
+    color: #0f56b3;
 }
 
-.card:last-of-type a:hover {
-    color: #1565c0;
+.resources a:hover {
+    text-decoration: underline;
 }
 
-/* --------------------
+/* ==========================
    FOOTER
--------------------- */
+========================== */
 footer {
-    background-color: #153e5c;
+    background-color: #123b5d;
     color: white;
     text-align: center;
-    padding: 1.2rem;
-    margin-top: 2rem;
-}
-
-footer p {
-    margin: 0.3rem 0;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
 #lastmodified {
     color: #ffd54f;
+    margin-top: 0.5rem;
 }
 
-/* --------------------
+/* ==========================
    RESPONSIVE
--------------------- */
+========================== */
 @media (max-width: 768px) {
 
     main {
@@ -174,7 +165,7 @@ footer p {
         text-align: center;
     }
 
-    .card:first-of-type img {
+    .about-me img {
         float: none;
         display: block;
         margin: 1rem auto;

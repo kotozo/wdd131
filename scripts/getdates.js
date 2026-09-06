@@ -5,4 +5,4 @@ const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
 // Date de dernière modification
-document.getElementById("lastModified").textContent = document.lastModified;
+document.getElementById("lastModified").textContent = "This page was last modified on: " + document.lastModified;

@@ -31,5 +31,7 @@ section {
 
     main {
         grid-template-columns: 1fr 1fr;
+        color: #000;
     }
+    
 }
